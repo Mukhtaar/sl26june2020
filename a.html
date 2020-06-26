@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    <meta name="robots" content="noindex, nofollow, noarchive">
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" type="text/css" href="images/style.css">
+    <link rel="stylesheet" type="text/css" href="images/animations.css">
+    <title>26th of June 2020</title>
+    <style>
+        html,
+        body {
+            font-family: sans-serif, Arial !important;
+        }
+
+        body {
+            overflow: hidden;
+        }
+
+        .content_4,
+        .content_5,
+        .content_2 {
+            display: none;
+        }
+
+        p.effects-1,
+        p.effects-2 {
+            display: none;
+            color: #fff;
+            font-size: 30px;
+        }
+
+        .content {
+            width: 504px;
+            display: block;
+            margin: 50px auto 0;
+            border-radius: 10px;
+            height: auto;
+            position: relative;
+            z-index: 8788;
+            background: #ffffff5c;
+            padding: 20px 0;
+
+        }
+
+        .content h3,
+        h4 {
+            color: #000;
+            font-size: 35px;
+            margin: 0px 0 15px;
+            display: block;
+            font-weight: bold;
+            font-family: sans-serif;
+            text-shadow: 1px 1px 1px #fff;
+        }
+
+        .content_4 {
+            padding: 20px 30px !important;
+            height: 180px;
+        }
+
+        .links h3 {
+            position: relative;
+            margin-top: 20px;
+        }
+
+        .links h4 {
+            position: relative;
+            text-align: center;
+            font-size: 1.5em;
+            margin-top: 6%;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        p.effects-2 {
+            font-size: 25px;
+            text-align: center;
+            color: #000;
+        }
+
+        .animate {
+            transition: all 0.1s;
+            -webkit-transition: all 0.1s;
+        }
+
+        .action-button {
+            position: relative;
+            border-radius: 8px;
+            color: #000 !important;
+            text-decoration: none;
+            display: block;
+            margin: 1rem auto;
+        }
+
+        .red {
+            background-color: #ffffff;
+            border-bottom: 5px solid #343434;
+        }
+
+        .action-button:active {
+            transform: translate(0px, 5px);
+            -webkit-transform: translate(0px, 5px);
+            border-bottom: 1px solid;
+        }
+
+        .green {
+            background-color: #000000;
+            border-bottom: 5px solid #4d4d4d;
+            color: #fff !important;
+        }
+
+        .left {
+            background: url('images/left.png') top left no-repeat;
+            width: 50%;
+            background-size: contain;
+            position: absolute;
+            z-index: -4;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .right {
+            background: url('images/right.png') top left no-repeat;
+            width: 50%;
+            background-size: contain;
+            position: absolute;
+            z-index: -3;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .cow {
+            background: url('images/cow.png') bottom left no-repeat;
+            width: 40%;
+            background-size: contain;
+            position: absolute;
+            z-index: -1;
+            left: 0;
+            top: 0;
+            height: 100%;
+        }
+
+        .sheep {
+            background: url('images/sheep.png') bottom left no-repeat;
+            width: 30%;
+            background-size: contain;
+            position: absolute;
+            z-index: -2;
+            right: 0;
+            top: 0;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="fall"></div>
+    <div class="bird-container bird-container--one">
+        <div class="bird bird--one"></div>
+    </div>
+    <div class="bird-container bird-container--two">
+        <div class="bird bird--two"></div>
+    </div>
+    <div class="bird-container bird-container--three">
+        <div class="bird bird--three"></div>
+    </div>
+    <div class="bird-container bird-container--four">
+        <div class="bird bird--four"></div>
+    </div>
+
+    <div id="wrapper">
+
+
+        <div class="content_4">
+
+            <p class="effects-1 text-center" style="color: #000;">Please wait.... <br><br>
+                <img src="images/loading.gif" style="float: none;" />
+                <br><br>
+            </p>
+
+            <p class="effects-2">We’re checking your answers...</p>
+        </div>
+
+        <div class="content_5">
+            <img src="images/logo.png" style="display: block;float: none;margin: 0 auto 20px;width: 330px;">
+
+            <div class="links">
+                <h3><span style="color:#000">Thank you!<br>Now you can start your game!</span></h3>
+                <h4>Create your hero now!</h4>
+                <br>
+                <a href="http://foy4a.voluumtrk3.com/click" class="button playnow action-button animate red"
+                    style=' text-align:center; '>CONTINUE</a>
+
+                <p id="last_text"
+                    style="margin: 0; color: #fff; font-style: italic; fint-size: 15px; text-align: center;">(Free
+                    Registration until June 30, 2020) </p>
+            </div>
+        </div>
+    </div>
+    </div>
+    <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script language="javascript">
+        window.onbeforeunload = function () {
+            //return 'Are you sure you want to leave? This is a FREE sign up period, experience the top rated 18+ Game now!';
+        }
+        $(".button_1").on("click", function (event) {
+            event.preventDefault();
+            $(".content_1").hide();
+            $('.content_2').show('slideUp');
+        });
+        $(".button_2").on("click", function (event) {
+            event.preventDefault();
+            $(".content_2").hide();
+            $('.content_4').show('slideUp');
+            $('p.effects-1').show('slideUp');
+            setTimeout(function () {
+                $('p.effects-2').show('slideUp');
+                setTimeout(function () {
+                    $('.content_4').hide();
+                    $('.content_5').show('slideUp');
+                }, 1200);
+            }, 2000);
+
+
+        });
+    </script>
+    <!-- Back Button Script -->
+    <script type="text/javascript">
+        (function (window, location) {
+                history.replaceState(null, document.title, location.pathname + location.search + "#!/index");
+                history.pushState(null, document.title, location.pathname + location.search);
+                window.addEventListener("popstate", function () {
+                    if (location.hash === "#!/index") {
+                        history.replaceState(null, document.title, location.pathname + location.search);
+                        setTimeout(function () {
+                            location.replace("https://superbgamer.com/competition/");
+                        }, 0);
+                    }
+                }, false)
+            }
+            (window, location));
+
+        $("a.lastext").on("click", function (event) {
+            setTimeout(function () {
+                window.location.replace("http://foy4a.voluumtrk3.com/click");
+            }, 1200);
+        });
+    </script>
+</body>
+
+</html>
